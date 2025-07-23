@@ -1,0 +1,19 @@
+{
+  "name": "underscores",
+  "version": "1.0.0",
+  "description": "A starter theme using Tailwind CSS.",
+  "author": "Automattic Theme Team",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Tailwind CSS"
+  ],
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  }
+}

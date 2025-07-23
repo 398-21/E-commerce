@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield !important;
+    appearance: none !important;
+  }
+
+  input[readonly] {
+    background-color: transparent;
+    /* Light gray background */
+    border: transparent;
+    cursor: not-allowed;
+    /* Show a "not allowed" cursor */
+  }
+
+}
+
+div.woocommerce-billing-fields>h3 {
+  display: none !important;
+}
+header.entry-header {
+  @apply hidden;
+}
+
+div.woocommerce-notices-wrapper {
+  @apply hidden;
+}
+
+/* Change "Place Order" button color */
+.woocommerce #place_order, 
+.woocommerce .woocommerce-checkout #payment #woocommerce_checkout_place_order {
+    background-color: rgb(25, 25, 112) !important; /* Change to your preferred color */
+    color: white !important; /* Text color */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.woocommerce-form-coupon-toggle .woocommerce-info::before {
+  display: none !important;
+}
+
+/* Remove extra space below the "Have a coupon?" message */
+.woocommerce-form-coupon-toggle {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.woocommerce-form-coupon-toggle .woocommerce-info {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* Hide default WooCommerce notices */
+.woocommerce-error, .woocommerce-message, .woocommerce-info {
+  display: none !important;
+}
+
+
+
